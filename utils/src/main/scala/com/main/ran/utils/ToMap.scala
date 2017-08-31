@@ -24,7 +24,7 @@ trait ToMap {
       if(param.typeSignature <:< typeOf[Option[_]])
         map.get(paramName)
       else
-        map.get(paramName).getOrElse(throw new IllegalArgumentException("Map is missing required parameter named " + paramName))
+        map.getOrElse(paramName, throw new IllegalArgumentException("Map is missing required parameter named " + paramName))
     })
 
     constructorMirror(constructorArgs:_*).asInstanceOf[T]

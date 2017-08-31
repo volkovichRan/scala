@@ -10,9 +10,9 @@ class TestMapTo extends BasicTest {
     SimpleClass.mapTo[SimpleClass](map).toString should equal(new SimpleClass(1, 1.1).toString)
   }
 
-  ignore should "become simple case class" in {
+  it should "become simple case class" in {
     val map = Map("int" -> 1, "double" -> 1.1)
-    SimpleCaseClass.mapTo[SimpleCaseClass](map) should equal(new SimpleClass(1, 1.1))
+    SimpleCaseClass.mapTo[SimpleCaseClass](map).toString should equal(new SimpleClass(1, 1.1).toString)
   }
 
   it should "become complex class " in {
