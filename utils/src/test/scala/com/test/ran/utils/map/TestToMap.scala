@@ -1,9 +1,10 @@
-package com.test.ran.utils.map.testsubjects
+package com.test.ran.utils.map
 
-import org.scalatest.{FlatSpec, Matchers}
 import com.main.ran.utils.ClassUtils._
+import com.test.ran.utils.BasicTest
+import com.test.ran.utils.map.testsubjects.{ComplexClass, SimpleCaseClass, SimpleClass}
 
-class TestMap extends FlatSpec with Matchers {
+class TestToMap extends BasicTest {
 
   SimpleCaseClass.className should "become map of all his attributes name to value" in {
     val testSubject = new SimpleCaseClass(1, 1.1)
