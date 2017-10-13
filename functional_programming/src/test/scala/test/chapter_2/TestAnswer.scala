@@ -1,7 +1,7 @@
-package main.chapter_2
+package test.chapter_2
 
-import main.BaseTest
-import Answers._
+import main.chapter_2.Answers._
+import test.BaseTest
 
 class TestAnswer extends BaseTest {
 
