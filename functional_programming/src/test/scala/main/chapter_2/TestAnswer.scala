@@ -3,7 +3,7 @@ package main.chapter_2
 import main.BaseTest
 import Answers._
 
-class TestAnswer[A] extends BaseTest {
+class TestAnswer extends BaseTest {
 
   "the 10 items of fibonacci" should "be 0, 1, 1, 2, 3, 5, 8, 13, 21, 34" in {
     val acceptedAnswers = List(0, 1, 1, 2, 3, 5, 8, 13, 21, 34)
